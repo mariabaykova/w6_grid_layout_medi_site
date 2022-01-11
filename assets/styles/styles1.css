@@ -1,0 +1,139 @@
+.tst {
+    border: black 1px;
+}
+
+.font_header {
+    font-size: 16px;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    /* шапка - основная часть - подвал */
+    /* grid-template: minmax(90px, auto) 1fr minmax(562px, auto) / 1fr; */
+    grid-template: 90px 1fr 562px / 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+    padding: 15px;
+    /* background-color: chartreuse; */
+    display: grid;
+    /* 1295px - ширина контейнера для контента, 189px - логотип, 36 + 189 + 35 контейнер с лого  */
+    grid-template: 1fr / 1fr minmax(auto, 260px) minmax(auto, 1035px) 1fr;
+    /* grid-template: 1fr / minmax(auto, 313px) minmax(auto, 260px) minmax(auto, 1035px) minmax(auto, 312px); */
+    /* grid-template: 1fr / 313px 260px 1035px 312px; */
+    align-items: center;
+}
+
+.header__logo {
+    grid-column: 2 / 3;
+    border-left-color: #C4C4C4;
+    border-left-width: 1px;
+
+}
+
+.header__menu {
+    grid-column: 3 / 4;
+}
+
+.header__list {
+    display: grid;
+    /* чтобы элементы меню встали в колонки */
+    grid-auto-flow: column;
+    justify-items: stretch;
+
+}
+
+.header__list li {
+    list-style-type: none;
+}
+
+.main {
+    grid-area: main;
+    /* padding: ; */
+    display: grid;
+    /* также, как и в шапке  */
+    grid-template: 700 px 580 px 504px 556 px / 1fr;
+    grid-template-areas:
+        "section1";
+    /* "section2" */
+    /* "section3" */
+    /* "section4"; */
+}
+
+.section1 {
+    grid-area: section1;
+    border: black 1px solid;
+
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr minmax(auto, 1295px) 1fr;
+    grid-template-areas:
+        "menutop"
+        "content"
+        "menubottom";
+}
+
+.menutop {
+    grid-area: menutop;
+    border: black 1px solid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.content {
+    grid-area: content;
+    border: black 1px solid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+}
+
+.menubottom {
+    grid-area: menubottom;
+    border: black 1px solid;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+
+.section2 {
+    grid-area: section2;
+    border: black 1px solid;
+}
+
+.section3 {
+    grid-area: section3;
+    border: black 1px solid;
+}
+
+.section4 {
+    grid-area: section4;
+    border: black 1px solid;
+}
+
+.menutop__list {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.menutop__list li {
+    list-style-type: none;
+}
+
+.menubottom__list {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.menubottom__list li {
+    list-style-type: none;
+}
+
+.footer {
+    grid-area: footer;
+}
