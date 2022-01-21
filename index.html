@@ -2,42 +2,83 @@
 <html lang="ru">
 <head>    
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
 MEDI (greeds)
 </title>
-<link rel="stylesheet" type="text/css" href="/grid_layout/medi_site/assets/styles/normalize.css"> 
-<link rel="stylesheet" type="text/css" href="/grid_layout/medi_site/assets/styles/styles.css"> 
+<link rel="stylesheet" type="text/css" href="/assets/styles/normalize.css"> 
+<link rel="stylesheet" type="text/css" href="/assets/styles/styles.css"> 
 </head>
 <body>
     <!-- оболочка grid-контейнера -->
     <div class="wrapper">
         <header class="header font_header font">
             <div class="header__logo">
-            <a href="#"><img src="/grid_layout/medi_site/assets/images/logo.png" alt="логотип"></a>
+            <!-- <a href="#"><img src="/assets/images/logo.png" alt="логотип"></a> -->
+            <img srcset="/assets/images/logos/logo_smaller_240.png 35w,
+            /assets/images/logos/logo_smaller_320.png 47w,
+            /assets/images/logos/logo_smaller_480.png 70w,
+            /assets/images/logos/logo_smaller_768.png 112w,
+            /assets/images/logos/logo_smaller_1024.png 150w,
+            /assets/images/logos/logo.png 189w"
+            sizes="(max-width: 239px) 35px,
+           (max-width: 319px) 47px,
+           (max-width: 479px) 70px,
+           (max-width: 767px) 112px,
+           (max-width: 1023px) 150px,
+           189px"
+           src="/assets/images/logo.png" alt="логотип">
             </div>
             <nav class="header__menu">
                 <ul class="header__list">
                     <li>
-                        <a href="" class="header__link font_color2">+7 (123) 456 78 90</a>
+                        <a href="#" class="header__link font_color2">+7 (123) 456 78 90</a>
                     </li>
                     <li>
-                        <a href="" class="header__link font_color2">Наши салоны</a>
+                        <a href="#" class="header__link font_color2">Наши салоны</a>
                     </li>
                     <li>
-                        <a href="" class="header__link">Версия для слабовидящих</a>
+                        <a href="#" class="header__link">Версия для слабовидящих</a>
                     </li>
                     <li>
-                        <a href="" class="header__link"><img src="/grid_layout/medi_site/assets/images/vk.png" alt=""></a>
+                        <a href="#" class="header__linksm">
+                            <!-- <img src="/assets/images/sm_logos/vk.png" alt=""> -->
+                            <img srcset="/assets/images/sm_logos/vk_15px.png 15w,
+                            /assets/images/sm_logos/vk.png 24w"
+                            sizes="(max-width: 480px) 15px,
+                           24px"
+                           src="/assets/images/sm_logos/vk.png" alt="">
+                        </a>
                     </li>
                     <li>
-                        <a href="" class="header__link"><img src="/grid_layout/medi_site/assets/images/youtube.png" alt=""></a>
+                        <a href="#" class="header__linksm">
+                            <!-- <img src="/assets/images/sm_logos/youtube.png" alt=""> -->
+                            <img srcset="/assets/images/sm_logos/youtube_15px.png 15w,
+                            /assets/images/sm_logos/youtube.png 24w"
+                            sizes="(max-width: 480px) 15px,
+                           24px"
+                           src="/assets/images/sm_logos/youtube.png" alt="">
+                        </a>
                     </li>
                     <li>
-                        <a href="" class="header__link"><img src="/grid_layout/medi_site/assets/images/facebook.png" alt=""></a>
+                        <a href="#" class="header__linksm">
+                            <!-- <img src="/assets/images/sm_logos/facebook.png" alt=""> -->
+                            <img srcset="/assets/images/sm_logos/facebook_15px.png 15w,
+                            /assets/images/sm_logos/facebook.png 24w"
+                            sizes="(max-width: 480px) 15px,
+                           24px"
+                           src="/assets/images/sm_logos/facebook.png" alt="">
+                        </a>
                     </li>
                     <li>
-                        <a href="" class="header__link"><img src="/grid_layout/medi_site/assets/images/instagram.png" alt=""></a>
+                        <a href="#" class="header__linksm">
+                            <!-- <img src="/assets/images/sm_logos/instagram.png" alt=""> -->
+                            <img srcset="/assets/images/sm_logos/instagram_15px.png 15w,
+                            /assets/images/sm_logos/instagram.png 24w"
+                            sizes="(max-width: 480px) 15px,
+                           24px"
+                           src="/assets/images/sm_logos/instagram.png" alt="">
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -70,15 +111,30 @@ MEDI (greeds)
             </nav>
 
             <section class="content">
-                <div class="content__title content__title_font">Косметология</div>
+                <!-- <div class="content__title content__title_font"> -->
+                    <h2 class="content__title content__title_font">Косметология</h2>
+                <!-- </div> -->
                 <div class="content__info content__info_font">Современный мир диктует новые каноны жизни: ухоженное лицо и тело, стройная, подтянутая фигура — сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека благополучного и успешного.</div>
                 <div class="content__button bckg1"><a class="font_color1" href="">подробнее</a></div>
                 <div class="content__arrows">
-                    <a href="" class="content__arrow"><img src="/grid_layout/medi_site/assets/images/arrow_left.png" alt=""></a>
-                    <a href="" class="content__arrow"><img src="/grid_layout/medi_site/assets/images/arrow_right.png" alt=""></a>
+                    <a href="#" class="content__arrow"><img src="/assets/images/arrow_left.png" alt=""></a>
+                    <a href="#" class="content__arrow"><img src="/assets/images/arrow_right.png" alt=""></a>
                 </div>
                 <div class="content__photo">
-                    <img src="/grid_layout/medi_site/assets/images/big_photo.png" alt="">
+                    <!-- <img src="/assets/images/big_photo/big_photo.png" alt="">  -->
+                    <img srcset="/assets/images/big_photo/big_photo_1024.png 590w, 
+                    /assets/images/big_photo/big_photo_768.png 441w,
+                    /assets/images/big_photo/big_photo_480.png 276w,
+                    /assets/images/big_photo/big_photo_320.png 186w,
+                    /assets/images/big_photo/big_photo_240.png 138w,
+                    /assets/images/big_photo/big_photo.png 746w"
+                    sizes="(max-width: 1023px) 590px,
+                   (max-width: 767px) 441px,
+                   (max-width: 480px) 276px,
+                   (max-width: 319px) 186px,
+                   (max-width: 240px) 138px,
+                   746px"
+                   src="/assets/images/big_photo/big_photo.png" alt="женщине наносят маску на лицо"> 
                 </div>
             </section>
 
@@ -103,6 +159,7 @@ MEDI (greeds)
 
 
         <footer class="footer">
+            <!-- начинается верхняя часть подвала -->
             <div class="footer__top">
                 <div class="footer__block">
                     <a href="" class="footer__link font_color2 font_size2">Услуги</a> 
@@ -148,20 +205,22 @@ MEDI (greeds)
                     <a href="" class="footer__link font_color2">Лазерная медицина</a>                                      
                 </div>
                 <div class="footer__block footer__block_big">
-                    <div class="footer__font_small">Телефон</div>
-                    <div>+7 (812) 123-45-67</div>
-                    <div class="footer__font_small">адрес</div>
+                    <div class="footer__font_small hidden">Телефон</div>
+                    <div class=""><a href="tel:+71234567890">+7 (123) 456 78 90</a></div>
+                    <div class="footer__font_small hidden">адрес</div>
                     <div>Невский пр. 140, пом. 10</div>
-                    <div class="footer__button bckg1"><a class="footer__font_button" href="#">как проехать?</a></div>
-                    <div class="footer__font_small">адрес</div>
+                    <div class="footer__button bckg1 hidden"><a class="footer__font_button" href="#">как проехать?</a></div>
+                    <div class="footer__font_small hidden">адрес</div>
                     <div>Большой пр. 12</div>
-                    <div class="footer__button bckg1"><a class="footer__font_button" href="#">как проехать?</a></div>
+                    <div class="footer__button bckg1 hidden"><a class="footer__font_button" href="#">как проехать?</a></div>
                 </div>                    
             </div>
+            <!-- закончилась верхняя часть подвала -->
             <div class="footer__gap"></div>
+            <!-- нижняя часть подвала -->
             <div class="footer__bottom">
                 <div class="footer__bottom__block">
-                    <a href="" class="footer__bottom__link copyr_font">(c) 2021. Центр космелогии. Все права защищены.
+                    <a href="" class="footer__bottom__link copyr_font">&copy; 2021. Центр космелогии. Все права защищены.
                         Наши сертификаты на осуществление деятельности.
                         Патенты на использование технологий.</a>
                 </div>
@@ -172,16 +231,16 @@ MEDI (greeds)
                             <a href="" class="footer__bottom__link">Версия для слабовидящих</a>
                         </div>
                         <div class="footer__bottom__block ">
-                            <a href="" class="footer__bottom__link"><img src="/grid_layout/medi_site/assets/images/vk.png" alt=""></a>
+                            <a href="" class="footer__bottom__link"><img src="/assets/images/vk.png" alt=""></a>
                         </div>
                         <div class="footer__bottom__block">
-                            <a href="" class="footer__bottom__link"><img src="/grid_layout/medi_site/assets/images/youtube.png" alt=""></a>
+                            <a href="" class="footer__bottom__link"><img src="/assets/images/youtube.png" alt=""></a>
                         </div>
                         <div class="footer__bottom__block">
-                            <a href="" class="footer__bottom__link"><img src="/grid_layout/medi_site/assets/images/facebook.png" alt=""></a>
+                            <a href="" class="footer__bottom__link"><img src="/assets/images/facebook.png" alt=""></a>
                         </div>
                         <div class="footer__bottom__block">
-                            <a href="" class="footer__bottom__link"><img src="/grid_layout/medi_site/assets/images/instagram.png" alt=""></a>
+                            <a href="" class="footer__bottom__link"><img src="/assets/images/instagram.png" alt=""></a>
                         </div>
             
             </div>
